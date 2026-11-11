@@ -1,0 +1,56 @@
+{
+  "image": { "width": 1920, "height": 1080 },
+  "camera": {
+    "eye": { "x": 0, "y": 0, "z": -1 },
+    "screenCentre": { "x": 0, "y": 0, "z": 0 },
+    "screenWidth": 1
+  },
+  "reflections": 4,
+  "ambient": 0.1,
+  "background": { "r": 0.45, "g": 0.62, "b": 0.85 },
+  "sun": {
+    "direction": { "x": 1, "y": -1.5, "z": 0.8 }
+  },
+  "objects": [
+    {
+      "type": "mesh",
+      "name": "monkey",
+      "obj": "models/monkey.obj",
+      "position": { "x": 0, "y": 0, "z": 8 },
+      "material": {
+        "colour": { "r": 0.85, "g": 0.65, "b": 0.3 },
+        "reflectivity": 0
+      }
+    },
+    {
+      "type": "sphere",
+      "name": "mirror",
+      "position": { "x": -2.7, "y": 0, "z": 8 },
+      "radius": 1,
+      "material": {
+        "colour": { "r": 0.1, "g": 0.4, "b": 0.45 },
+        "reflectivity": 0.6
+      }
+    },
+    {
+      "type": "mesh",
+      "name": "red-cube",
+      "obj": "models/cube.obj",
+      "position": { "x": 2.7, "y": 0, "z": 8 },
+      "material": {
+        "colour": { "r": 0.9, "g": 0.12, "b": 0.1 },
+        "reflectivity": 0
+      }
+    },
+    {
+      "type": "plane",
+      "name": "floor",
+      "position": { "x": 0, "y": -1, "z": 0 },
+      "normal": { "x": 0, "y": 1, "z": 0 },
+      "material": {
+        "colour": { "r": 0.5, "g": 0.5, "b": 0.5 },
+        "reflectivity": 0.3
+      }
+    }
+  ]
+}
